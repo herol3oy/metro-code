@@ -11,7 +11,7 @@ interface PostPageProp {
 
 export async function generateMetadata({ params }: PostPageProp) {
   const slug = params.slug
-  const post = getPostContent(slug)
+  const post = await getPostContent(slug)
 
   return {
     title: `Metro Code | ${post.data.title}`,
