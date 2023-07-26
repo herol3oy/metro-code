@@ -1,28 +1,30 @@
 import AboutMe from '@/components/AboutMe'
 import { formatDate } from '@/utils/format-date'
-import { getPostMetadata } from '@/utils/get-post-metadata'
+import { getAllPosts } from '@/utils/post'
 import Link from 'next/link'
 
-export default function Home() {
-  const postMetadata = getPostMetadata()
+const Home = async () => {
+  const postMetadata = await getAllPosts()
 
   return (
     <div className="flex flex-col gap-5">
       <AboutMe />
       <h1 className="text-2xl font-bold">Recent notes</h1>
-      {postMetadata.map((p) => (
-        <div className="flex justify-between" key={p.slug}>
+      {postMetadata.map(({ slug, title, date }) => (
+        <div className="flex justify-between" key={slug}>
           <Link
             className="w-fit transition-all duration-500 hover:text-gray-600"
-            href={`/blog/${p.slug}`}
+            href={`/blog/${slug}`}
           >
-            <p>{p.title}</p>
+            <p>{title}</p>
           </Link>
           <small className="text-gray-400">
-            <time dateTime={p.date}>{formatDate(p.date)}</time>
+            <time dateTime={date}>{formatDate(date)}</time>
           </small>
         </div>
       ))}
     </div>
   )
 }
+
+export default Home
