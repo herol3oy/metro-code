@@ -2,6 +2,7 @@ import { HAMED_SEDIGHI_PORTRAIT } from '@/constance/my-portrait'
 import { formatDate } from '@/utils/format-date'
 import { getPostContent } from '@/utils/get-post-content'
 import { MarkdownOptions } from '@/utils/markdown-options'
+import { getPostData } from '@/utils/post'
 import Markdown from 'markdown-to-jsx'
 import Image from 'next/image'
 
@@ -11,16 +12,16 @@ interface PostPageProp {
 
 export async function generateMetadata({ params }: PostPageProp) {
   const slug = params.slug
-  const post = await getPostContent(slug)
+  const post = await getPostData(slug)
 
   return {
     title: `Metro Code | ${post.data.title}`,
   }
 }
 
-const PostPage = ({ params }: PostPageProp) => {
+const PostPage = async ({ params }: PostPageProp) => {
   const slug = params.slug
-  const post = getPostContent(slug)
+  const post = await getPostData(slug)
 
   return (
     <>
