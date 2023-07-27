@@ -1,1 +1,1 @@
-export const NAVIGATIONS = ['🙋 About', '🛠️ Projects']
+export const NAVIGATIONS = ['🙋 About', '🛠️ Projects', '🇵🇱 Poland']

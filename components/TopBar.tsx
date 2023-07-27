@@ -11,7 +11,7 @@ const TopBar = () => (
     <ul className="flex gap-1">
       {NAVIGATIONS.map((nav) => (
         <Link
-          className="w-28 rounded-full p-3 text-center text-sm font-bold transition-all duration-300 hover:bg-black hover:text-white"
+          className="rounded-full p-3 text-center text-sm font-bold transition-all duration-300 hover:bg-black hover:text-white"
           href={`/${nav.split(' ')[1].toLocaleLowerCase()}`}
           key={nav}
         >
