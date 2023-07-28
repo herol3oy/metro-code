@@ -16,7 +16,7 @@ const AboutMe = () => (
       <h1 className="text-3xl font-black">
         Hey, I&apos;m Hamed <small className="text-purple-600">/hə.med/</small>
       </h1>
-      <p className="text-gray-600">
+      <p>
         Welcome to <span className="font-black">Metro Code</span> where I share
         about my thoughts and ideas on life and my favorite technologies as a{' '}
         <span className="font-black text-purple-600">front-end developer</span>.

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  p {
+    @apply text-gray-600;
+  }
+
   .transition-slow {
     @apply transition-all duration-300;
   }
