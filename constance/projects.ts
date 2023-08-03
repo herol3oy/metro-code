@@ -24,7 +24,7 @@ export const PROJECTS: Projects[] = [
     name: 'Female Rockers',
     description:
       'FemaleRockers is a blog committed to interviewing and showcasing female rock musicians from around the world. Throughout the project, my main objective was to craft an eye-catching layout that captivates visitors and delivers an engaging user experience. To achieve this, I leveraged Sanity, a content delivery platform known for its speed and efficiency, ensuring fast and seamless delivery of content to the users.',
-    stacks: ['React', 'Next.js', 'Scss', 'Firebase', 'Sanity'],
+    stacks: ['React', 'Next.js', 'TypeScript', 'Tailwindcss', 'Sanity'],
     screenshot:
       'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219192/metro-code/projects-screenshots/female-rockers-screenshot_yf82fq.png',
     url: 'https://femalerockers.com',
@@ -34,7 +34,7 @@ export const PROJECTS: Projects[] = [
     name: 'Cordly',
     description:
       'Cordly is an online platform specifically designed for musicians to create personalized mini portfolios, showcase their work, and connect with other musicians based on their location, interests, influences, and skills. It serves as a virtual hub where musicians can highlight their talent, share their social links, and discover like-minded artists in their community.',
-    stacks: ['React', 'Next.js', 'ChakraUI', 'Scss'],
+    stacks: ['React', 'Next.js', 'TypeScript', 'ChakraUI', 'Scss'],
     screenshot:
       'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219190/metro-code/projects-screenshots/cordly-screenshot_t8rfjo.png',
     url: 'https://cordly.vercel.app',
