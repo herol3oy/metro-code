@@ -21,17 +21,16 @@ const Home = async () => {
       <AboutMe />
       <h1 className="text-2xl font-bold">Recent notes</h1>
       {sortedPosts.map(({ slug, title, date }) => (
-        <div className="flex justify-between" key={slug}>
-          <Link
-            className="w-fit transition-all duration-500 hover:text-gray-600"
-            href={`/blog/${slug}`}
-          >
-            <p>{title}</p>
-          </Link>
+        <Link
+          key={slug}
+          className="flex justify-between rounded-md p-3 shadow-md transition-all duration-300 ease-in-out hover:bg-gray-200"
+          href={`/blog/${slug}`}
+        >
+          <p>{title}</p>
           <small className="text-gray-400">
             <time dateTime={date}>{formatDate(date)}</time>
           </small>
-        </div>
+        </Link>
       ))}
     </div>
   )
