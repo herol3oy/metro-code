@@ -21,6 +21,16 @@ type Technology =
 
 export const PROJECTS: Projects[] = [
   {
+    name: 'Austen',
+    description:
+      'Austen is an AI-powered Nextjs application to generate story relationships between book characters using Mermaidjs diagrams.',
+    stacks: ['React', 'Next.js', 'TypeScript', 'Tailwindcss'],
+    screenshot:
+      'https://res.cloudinary.com/dxu6gcib2/image/upload/c_thumb,w_200,g_face/v1749406191/austen/oszlehuzvxy5ndbrrdrg.png',
+    url: 'https://austen.vercel.app/',
+    github: 'https://github.com/herol3oy/austen',
+  },
+  {
     name: 'Female Rockers',
     description:
       'FemaleRockers is a blog committed to interviewing and showcasing female rock musicians from around the world. Throughout the project, my main objective was to craft an eye-catching layout that captivates visitors and delivers an engaging user experience. To achieve this, I leveraged Sanity, a content delivery platform known for its speed and efficiency, ensuring fast and seamless delivery of content to the users.',
@@ -30,16 +40,17 @@ export const PROJECTS: Projects[] = [
     url: 'https://femalerockers.com',
     github: 'https://github.com/herol3oy/femalerockers',
   },
-  {
-    name: 'Cordly',
-    description:
-      'Cordly is an online platform specifically designed for musicians to create personalized mini portfolios, showcase their work, and connect with other musicians based on their location, interests, influences, and skills. It serves as a virtual hub where musicians can highlight their talent, share their social links, and discover like-minded artists in their community.',
-    stacks: ['React', 'Next.js', 'TypeScript', 'ChakraUI', 'Scss'],
-    screenshot:
-      'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219190/metro-code/projects-screenshots/cordly-screenshot_t8rfjo.png',
-    url: 'https://cordly.vercel.app',
-    github: 'https://github.com/herol3oy/cordly',
-  },
+  // {
+  //   name: 'Cordly',
+  //   description:
+  //     'Cordly is an online platform specifically designed for musicians to create personalized mini portfolios, showcase their work, and connect with other musicians based on their location, interests, influences, and skills. It serves as a virtual hub where musicians can highlight their talent, share their social links, and discover like-minded artists in their community.',
+  //   stacks: ['React', 'Next.js', 'TypeScript', 'ChakraUI', 'Scss'],
+  //   screenshot:
+  //     'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219190/metro-code/projects-screenshots/cordly-screenshot_t8rfjo.png',
+  //   url: 'https://cordly.vercel.app',
+  //   github: 'https://github.com/herol3oy/cordly',
+  // },
+
   {
     name: 'Kartly',
     description:
@@ -50,33 +61,33 @@ export const PROJECTS: Projects[] = [
     url: 'https://kartly.vercel.app/',
     github: 'https://github.com/herol3oy/kartly',
   },
-  {
-    name: 'Mindspark',
-    description:
-      'Mindspark is an online app that allows users to generate random quotes based on selected categories. Users also have the ability to like and save quotes to their favorites. The app utilizes an external API to fetch quotations, and React Context is implemented to share state between components, ensuring a seamless user experience.',
-    stacks: ['React', 'Next.js', 'TypeScript', 'Tailwindcss'],
-    screenshot:
-      'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219189/metro-code/projects-screenshots/mind-spark-screenshot_kbbmpm.png',
-    url: 'https://mind-spark-two.vercel.app/',
-    github: 'https://github.com/herol3oy/mind-spark',
-  },
-  {
-    name: 'Kiosk 24',
-    description:
-      "Kiosk 24 is a comprehensive newspaper image archive of a news website. The application captures full screenshots of the provided news websites every hour using Github Actions. These screenshots are then published to Cloudinary, while the corresponding metadata is stored in Firebase. This process ensures a regular and up-to-date collection of images, providing a reliable archive of the news website's content.",
-    stacks: ['React', 'Next.js', 'TypeScript', 'Tailwindcss'],
-    screenshot:
-      'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219193/metro-code/projects-screenshots/kiosk-24-screenshot_xcoep8.png',
-    url: 'https://kiosk-24.vercel.app/',
-    github: 'https://github.com/herol3oy/kiosk-24',
-  },
-  {
-    name: 'Dashboard UI',
-    description:
-      'A Figma-designed dashboard layout for large screens, featuring a minimalistic palette of four colors. The user-friendly design includes easily clickable buttons for seamless interaction, while strategically incorporating ample space to enhance readability and visual appeal. Additionally, darkening the colors ensures a comfortable user experience in various lighting conditions.',
-    stacks: ['Figma'],
-    screenshot:
-      'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219189/metro-code/projects-screenshots/dashboard-ui-screenshot_fsxcuq.png',
-    url: 'https://bit.ly/3JGsH2s',
-  },
+  // {
+  //   name: 'Mindspark',
+  //   description:
+  //     'Mindspark is an online app that allows users to generate random quotes based on selected categories. Users also have the ability to like and save quotes to their favorites. The app utilizes an external API to fetch quotations, and React Context is implemented to share state between components, ensuring a seamless user experience.',
+  //   stacks: ['React', 'Next.js', 'TypeScript', 'Tailwindcss'],
+  //   screenshot:
+  //     'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219189/metro-code/projects-screenshots/mind-spark-screenshot_kbbmpm.png',
+  //   url: 'https://mind-spark-two.vercel.app/',
+  //   github: 'https://github.com/herol3oy/mind-spark',
+  // },
+  // {
+  //   name: 'Kiosk 24',
+  //   description:
+  //     "Kiosk 24 is a comprehensive newspaper image archive of a news website. The application captures full screenshots of the provided news websites every hour using Github Actions. These screenshots are then published to Cloudinary, while the corresponding metadata is stored in Firebase. This process ensures a regular and up-to-date collection of images, providing a reliable archive of the news website's content.",
+  //   stacks: ['React', 'Next.js', 'TypeScript', 'Tailwindcss'],
+  //   screenshot:
+  //     'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219193/metro-code/projects-screenshots/kiosk-24-screenshot_xcoep8.png',
+  //   url: 'https://kiosk-24.vercel.app/',
+  //   github: 'https://github.com/herol3oy/kiosk-24',
+  // },
+  // {
+  //   name: 'Dashboard UI',
+  //   description:
+  //     'A Figma-designed dashboard layout for large screens, featuring a minimalistic palette of four colors. The user-friendly design includes easily clickable buttons for seamless interaction, while strategically incorporating ample space to enhance readability and visual appeal. Additionally, darkening the colors ensures a comfortable user experience in various lighting conditions.',
+  //   stacks: ['Figma'],
+  //   screenshot:
+  //     'https://res.cloudinary.com/dxu6gcib2/image/upload/v1690219189/metro-code/projects-screenshots/dashboard-ui-screenshot_fsxcuq.png',
+  //   url: 'https://bit.ly/3JGsH2s',
+  // },
 ]
